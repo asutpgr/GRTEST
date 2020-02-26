@@ -100,8 +100,8 @@ namespace SharpWindows
                 {
                     foreach (IgObject igobj in IgObjs)
                     {
-                        lstFounded.Items.Add(igobj.HierarchicalName + "[" + igobj.Tagname + "]");
-                        //lstFounded.Items.Add(igobj.Tagname);
+                        //lstFounded.Items.Add(igobj.HierarchicalName + "[" + igobj.Tagname + "]");
+                        lstFounded.Items.Add(igobj.Tagname);
                         //lstFounded.Items.Add(igobj.HierarchicalName);
                     }
                 }
