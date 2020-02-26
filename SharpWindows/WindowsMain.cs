@@ -26,9 +26,7 @@ namespace SharpWindows
 
         IgObjects IgObjs;
         IgObject IgObj;
-        bool loggedIN = false;
-  
-     
+        bool loggedIN = false; 
 
 
         public WindowsMain()
