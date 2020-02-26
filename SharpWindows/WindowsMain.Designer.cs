@@ -54,6 +54,8 @@
             this.txtUser = new System.Windows.Forms.TextBox();
             this.lblUser = new System.Windows.Forms.Label();
             this.brnCreateObjOrInst = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCreateFrom = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // list_galaxys
@@ -303,11 +305,27 @@
             this.brnCreateObjOrInst.UseVisualStyleBackColor = true;
             this.brnCreateObjOrInst.Click += new System.EventHandler(this.brnCreateObjOrInst_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(0, 0);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 27;
+            // 
+            // txtCreateFrom
+            // 
+            this.txtCreateFrom.Location = new System.Drawing.Point(781, 156);
+            this.txtCreateFrom.Name = "txtCreateFrom";
+            this.txtCreateFrom.Size = new System.Drawing.Size(100, 20);
+            this.txtCreateFrom.TabIndex = 28;
+            // 
             // WindowsMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(994, 699);
+            this.Controls.Add(this.txtCreateFrom);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.brnCreateObjOrInst);
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.btnUnDep);
@@ -372,6 +390,8 @@
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.Button brnCreateObjOrInst;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCreateFrom;
     }
 }
 

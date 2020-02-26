@@ -13,7 +13,7 @@ namespace SharpWindows
 {
     public partial class WindowsMain : Form
     {
-        GRAccessApp grAccess = new GRAccessAppClass();
+         GRAccessApp grAccess = new GRAccessAppClass();
         object SelectedItem;
         int SelectedItemIdnex = 0;
         string grNodeName = Environment.MachineName;
@@ -25,8 +25,7 @@ namespace SharpWindows
         IGalaxy galaxy;
 
         IgObjects IgObjs;
-        IgObject IgObj;
-        ITemplate Template;
+  
         bool loggedIN = false; 
 
 
@@ -228,14 +227,21 @@ namespace SharpWindows
         private void brnCreateObjOrInst_Click(object sender, EventArgs e)
         {
             // Создание объекта (UserDefined)
-            
+            string tagname = txtNameE.Text.ToString();
+            string parentname = txtCreateFrom.Text.ToString();
+                       
+            IgObjects parents = galaxy.QueryObjects(EgObjectIsTemplateOrInstance.gObjectIsTemplate, EConditionType.NameEquals, parentname, EMatch.MatchCondition);
 
+            ITemplate parent = (ITemplate) parents[parentname];
+
+            ITemplate result = parent.CreateTemplate(tagname, true);
+
+            result.Save();
+           
         }
 
-        public ITemplate CreateTemplate(string tagname,string parent)
-        {
-            return 
+       
 
-        }
+       
     }
 }
