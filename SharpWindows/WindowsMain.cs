@@ -225,19 +225,5 @@ namespace SharpWindows
             txtStatusResQ.Text = "ID:" + IgObjs.CommandResults.Item[SelectedItemIdnex].ID.ToString() + " " + IgObjs.CommandResults.Item[SelectedItemIdnex].CustomMessage.ToString();
             
         }
-
-
-
-
-
-
-        //
-        // Functions
-        //
-
-
-        //
-        //
-        //
-    }
+            }
 }
