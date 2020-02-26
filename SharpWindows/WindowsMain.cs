@@ -8,12 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ArchestrA.GRAccess;
-
+using System.Runtime.InteropServices.WindowsRuntime;
 namespace SharpWindows
 {
     public partial class WindowsMain : Form
     {
-         GRAccessApp grAccess = new GRAccessAppClass();
+
+        GRAccessApp grAccess = new GRAccessAppClass();
+
         object SelectedItem;
         int SelectedItemIdnex = 0;
         string grNodeName = Environment.MachineName;
@@ -155,7 +157,7 @@ namespace SharpWindows
 
             try
             {
-                IgObjs = galaxy.QueryObjects(EgObjectIsTemplateOrInstance.gObjectIsInstance, EConditionType.NameEquals, value, EMatch.MatchCondition);
+                IgObjs = galaxy.QueryObjects(EgObjectIsTemplateOrInstance.gObjectIsTemplate, EConditionType.NameEquals, value, EMatch.MatchCondition);
                 if (!(IgObjs == null))
                 {
                     foreach (IgObject igobj in IgObjs)
@@ -209,19 +211,17 @@ namespace SharpWindows
         private void btnDep_Click(object sender, EventArgs e)
         {
             IgObjs.Deploy(EActionForCurrentlyDeployedObjects.redeployOriginal, 
-                ESkipIfCurrentlyUndeployed.dontSkipIfCurrentlyUndeployed, 
-                EDeployOnScan.doDeployOnScan, 
-                EForceOffScan.doForceOffScan, 
-                false);
+                          ESkipIfCurrentlyUndeployed.dontSkipIfCurrentlyUndeployed, 
+                          EDeployOnScan.doDeployOnScan, 
+                          EForceOffScan.doForceOffScan, 
+                          false);
             txtStatusResQ.Text = "ID:" + IgObjs.CommandResults.Item[SelectedItemIdnex].ID.ToString() + " " + IgObjs.CommandResults.Item[SelectedItemIdnex].CustomMessage.ToString();
-            
         }
 
         private void btnUnDep_Click(object sender, EventArgs e)
         {
             IgObjs.Undeploy(EForceOffScan.doForceOffScan, false);
             txtStatusResQ.Text = "ID:" + IgObjs.CommandResults.Item[SelectedItemIdnex].ID.ToString() + " " + IgObjs.CommandResults.Item[SelectedItemIdnex].CustomMessage.ToString();
-            
         }
 
         private void brnCreateObjOrInst_Click(object sender, EventArgs e)
@@ -231,17 +231,15 @@ namespace SharpWindows
             string parentname = txtCreateFrom.Text.ToString();
                        
             IgObjects parents = galaxy.QueryObjects(EgObjectIsTemplateOrInstance.gObjectIsTemplate, EConditionType.NameEquals, parentname, EMatch.MatchCondition);
-
+            IgObject obj;
             ITemplate parent = (ITemplate) parents[parentname];
-
+           
             ITemplate result = parent.CreateTemplate(tagname, true);
-
+            
             result.Save();
            
         }
-
-       
-
-       
     }
+       
 }
+

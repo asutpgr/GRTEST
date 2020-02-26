@@ -54,26 +54,27 @@
             this.txtUser = new System.Windows.Forms.TextBox();
             this.lblUser = new System.Windows.Forms.Label();
             this.brnCreateObjOrInst = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.txtCreateFrom = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // list_galaxys
             // 
             this.list_galaxys.FormattingEnabled = true;
-            this.list_galaxys.Location = new System.Drawing.Point(9, 10);
-            this.list_galaxys.Margin = new System.Windows.Forms.Padding(2);
+            this.list_galaxys.ItemHeight = 16;
+            this.list_galaxys.Location = new System.Drawing.Point(12, 12);
+            this.list_galaxys.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.list_galaxys.Name = "list_galaxys";
-            this.list_galaxys.Size = new System.Drawing.Size(237, 82);
+            this.list_galaxys.Size = new System.Drawing.Size(315, 100);
             this.list_galaxys.TabIndex = 0;
             this.list_galaxys.SelectedIndexChanged += new System.EventHandler(this.list_galaxys_SelectedIndexChanged);
             // 
             // btnGetExistGalaxys
             // 
-            this.btnGetExistGalaxys.Location = new System.Drawing.Point(9, 98);
-            this.btnGetExistGalaxys.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGetExistGalaxys.Location = new System.Drawing.Point(12, 121);
+            this.btnGetExistGalaxys.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGetExistGalaxys.Name = "btnGetExistGalaxys";
-            this.btnGetExistGalaxys.Size = new System.Drawing.Size(64, 19);
+            this.btnGetExistGalaxys.Size = new System.Drawing.Size(85, 23);
             this.btnGetExistGalaxys.TabIndex = 1;
             this.btnGetExistGalaxys.Text = "Запрос";
             this.btnGetExistGalaxys.UseVisualStyleBackColor = true;
@@ -81,46 +82,44 @@
             // 
             // txtGalaxyRep
             // 
-            this.txtGalaxyRep.Location = new System.Drawing.Point(250, 32);
-            this.txtGalaxyRep.Margin = new System.Windows.Forms.Padding(2);
+            this.txtGalaxyRep.Location = new System.Drawing.Point(333, 39);
+            this.txtGalaxyRep.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtGalaxyRep.Name = "txtGalaxyRep";
-            this.txtGalaxyRep.Size = new System.Drawing.Size(116, 20);
+            this.txtGalaxyRep.Size = new System.Drawing.Size(153, 22);
             this.txtGalaxyRep.TabIndex = 2;
             // 
             // txtGalaxyName
             // 
-            this.txtGalaxyName.Location = new System.Drawing.Point(378, 32);
-            this.txtGalaxyName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtGalaxyName.Location = new System.Drawing.Point(504, 39);
+            this.txtGalaxyName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtGalaxyName.Name = "txtGalaxyName";
-            this.txtGalaxyName.Size = new System.Drawing.Size(109, 20);
+            this.txtGalaxyName.Size = new System.Drawing.Size(144, 22);
             this.txtGalaxyName.TabIndex = 3;
             // 
             // lblNodeG
             // 
             this.lblNodeG.AutoSize = true;
-            this.lblNodeG.Location = new System.Drawing.Point(250, 15);
-            this.lblNodeG.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNodeG.Location = new System.Drawing.Point(333, 18);
             this.lblNodeG.Name = "lblNodeG";
-            this.lblNodeG.Size = new System.Drawing.Size(117, 13);
+            this.lblNodeG.Size = new System.Drawing.Size(152, 17);
             this.lblNodeG.TabIndex = 4;
             this.lblNodeG.Text = "Расположение Galaxy";
             // 
             // lblNameG
             // 
             this.lblNameG.AutoSize = true;
-            this.lblNameG.Location = new System.Drawing.Point(400, 15);
-            this.lblNameG.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNameG.Location = new System.Drawing.Point(533, 18);
             this.lblNameG.Name = "lblNameG";
-            this.lblNameG.Size = new System.Drawing.Size(64, 13);
+            this.lblNameG.Size = new System.Drawing.Size(82, 17);
             this.lblNameG.TabIndex = 5;
             this.lblNameG.Text = "Имя Galaxy";
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(379, 56);
-            this.btnConnect.Margin = new System.Windows.Forms.Padding(2);
+            this.btnConnect.Location = new System.Drawing.Point(505, 69);
+            this.btnConnect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(108, 19);
+            this.btnConnect.Size = new System.Drawing.Size(144, 23);
             this.btnConnect.TabIndex = 6;
             this.btnConnect.Text = "Connect";
             this.btnConnect.UseVisualStyleBackColor = true;
@@ -130,37 +129,35 @@
             // 
             this.lblStatus.AutoSize = true;
             this.lblStatus.ForeColor = System.Drawing.Color.Red;
-            this.lblStatus.Location = new System.Drawing.Point(250, 65);
-            this.lblStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblStatus.Location = new System.Drawing.Point(333, 80);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(67, 13);
+            this.lblStatus.Size = new System.Drawing.Size(86, 17);
             this.lblStatus.TabIndex = 7;
             this.lblStatus.Text = "Disconected";
             // 
             // lblNameE
             // 
             this.lblNameE.AutoSize = true;
-            this.lblNameE.Location = new System.Drawing.Point(902, 134);
-            this.lblNameE.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNameE.Location = new System.Drawing.Point(1203, 165);
             this.lblNameE.Name = "lblNameE";
-            this.lblNameE.Size = new System.Drawing.Size(81, 13);
+            this.lblNameE.Size = new System.Drawing.Size(102, 17);
             this.lblNameE.TabIndex = 8;
             this.lblNameE.Text = "Имя элемента";
             // 
             // txtNameE
             // 
-            this.txtNameE.Location = new System.Drawing.Point(905, 156);
-            this.txtNameE.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNameE.Location = new System.Drawing.Point(1207, 192);
+            this.txtNameE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNameE.Name = "txtNameE";
-            this.txtNameE.Size = new System.Drawing.Size(76, 20);
+            this.txtNameE.Size = new System.Drawing.Size(100, 22);
             this.txtNameE.TabIndex = 9;
             // 
             // btnFind
             // 
-            this.btnFind.Location = new System.Drawing.Point(905, 182);
-            this.btnFind.Margin = new System.Windows.Forms.Padding(2);
+            this.btnFind.Location = new System.Drawing.Point(1207, 224);
+            this.btnFind.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnFind.Name = "btnFind";
-            this.btnFind.Size = new System.Drawing.Size(75, 19);
+            this.btnFind.Size = new System.Drawing.Size(100, 23);
             this.btnFind.TabIndex = 10;
             this.btnFind.Text = "FInd";
             this.btnFind.UseVisualStyleBackColor = true;
@@ -169,19 +166,22 @@
             // lstFounded
             // 
             this.lstFounded.FormattingEnabled = true;
+            this.lstFounded.ItemHeight = 16;
             this.lstFounded.Items.AddRange(new object[] {
             "             ALL FOUNDED IN GALAXIES"});
-            this.lstFounded.Location = new System.Drawing.Point(12, 123);
+            this.lstFounded.Location = new System.Drawing.Point(16, 151);
+            this.lstFounded.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstFounded.Name = "lstFounded";
-            this.lstFounded.Size = new System.Drawing.Size(271, 563);
+            this.lstFounded.Size = new System.Drawing.Size(360, 692);
             this.lstFounded.TabIndex = 11;
             this.lstFounded.SelectedIndexChanged += new System.EventHandler(this.lstFounded_SelectedIndexChanged);
             // 
             // btnGetTemplate
             // 
-            this.btnGetTemplate.Location = new System.Drawing.Point(289, 123);
+            this.btnGetTemplate.Location = new System.Drawing.Point(385, 151);
+            this.btnGetTemplate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGetTemplate.Name = "btnGetTemplate";
-            this.btnGetTemplate.Size = new System.Drawing.Size(75, 24);
+            this.btnGetTemplate.Size = new System.Drawing.Size(100, 30);
             this.btnGetTemplate.TabIndex = 12;
             this.btnGetTemplate.Text = "Get";
             this.btnGetTemplate.UseVisualStyleBackColor = true;
@@ -190,33 +190,37 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(540, 46);
+            this.label1.Location = new System.Drawing.Point(720, 57);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 13);
+            this.label1.Size = new System.Drawing.Size(69, 17);
             this.label1.TabIndex = 13;
             this.label1.Text = "Password";
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(518, 59);
+            this.txtPassword.Location = new System.Drawing.Point(691, 73);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(100, 20);
+            this.txtPassword.Size = new System.Drawing.Size(132, 22);
             this.txtPassword.TabIndex = 14;
             // 
             // lblResMsgConnect
             // 
             this.lblResMsgConnect.AutoSize = true;
-            this.lblResMsgConnect.Location = new System.Drawing.Point(268, 103);
+            this.lblResMsgConnect.Location = new System.Drawing.Point(357, 127);
+            this.lblResMsgConnect.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblResMsgConnect.Name = "lblResMsgConnect";
-            this.lblResMsgConnect.Size = new System.Drawing.Size(58, 13);
+            this.lblResMsgConnect.Size = new System.Drawing.Size(93, 17);
             this.lblResMsgConnect.TabIndex = 15;
             this.lblResMsgConnect.Text = "-----------------";
             // 
             // btnDisconect
             // 
-            this.btnDisconect.Location = new System.Drawing.Point(512, 84);
+            this.btnDisconect.Location = new System.Drawing.Point(683, 103);
+            this.btnDisconect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDisconect.Name = "btnDisconect";
-            this.btnDisconect.Size = new System.Drawing.Size(109, 21);
+            this.btnDisconect.Size = new System.Drawing.Size(145, 26);
             this.btnDisconect.TabIndex = 16;
             this.btnDisconect.Text = "Disconnect";
             this.btnDisconect.UseVisualStyleBackColor = true;
@@ -224,9 +228,10 @@
             // 
             // btnExport
             // 
-            this.btnExport.Location = new System.Drawing.Point(378, 80);
+            this.btnExport.Location = new System.Drawing.Point(504, 98);
+            this.btnExport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(109, 23);
+            this.btnExport.Size = new System.Drawing.Size(145, 28);
             this.btnExport.TabIndex = 19;
             this.btnExport.Text = "Export";
             this.btnExport.UseVisualStyleBackColor = true;
@@ -234,16 +239,18 @@
             // 
             // txtStatusResQ
             // 
-            this.txtStatusResQ.Location = new System.Drawing.Point(843, 41);
+            this.txtStatusResQ.Location = new System.Drawing.Point(1124, 50);
+            this.txtStatusResQ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtStatusResQ.Name = "txtStatusResQ";
-            this.txtStatusResQ.Size = new System.Drawing.Size(139, 20);
+            this.txtStatusResQ.Size = new System.Drawing.Size(184, 22);
             this.txtStatusResQ.TabIndex = 20;
             // 
             // btnCOut
             // 
-            this.btnCOut.Location = new System.Drawing.Point(647, 66);
+            this.btnCOut.Location = new System.Drawing.Point(863, 81);
+            this.btnCOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCOut.Name = "btnCOut";
-            this.btnCOut.Size = new System.Drawing.Size(75, 23);
+            this.btnCOut.Size = new System.Drawing.Size(100, 28);
             this.btnCOut.TabIndex = 21;
             this.btnCOut.Text = "CheckOut";
             this.btnCOut.UseVisualStyleBackColor = true;
@@ -251,9 +258,10 @@
             // 
             // btnCIn
             // 
-            this.btnCIn.Location = new System.Drawing.Point(731, 65);
+            this.btnCIn.Location = new System.Drawing.Point(975, 80);
+            this.btnCIn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCIn.Name = "btnCIn";
-            this.btnCIn.Size = new System.Drawing.Size(75, 23);
+            this.btnCIn.Size = new System.Drawing.Size(100, 28);
             this.btnCIn.TabIndex = 22;
             this.btnCIn.Text = "CheckIn";
             this.btnCIn.UseVisualStyleBackColor = true;
@@ -261,9 +269,10 @@
             // 
             // btnDep
             // 
-            this.btnDep.Location = new System.Drawing.Point(647, 26);
+            this.btnDep.Location = new System.Drawing.Point(863, 32);
+            this.btnDep.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDep.Name = "btnDep";
-            this.btnDep.Size = new System.Drawing.Size(75, 23);
+            this.btnDep.Size = new System.Drawing.Size(100, 28);
             this.btnDep.TabIndex = 23;
             this.btnDep.Text = "Deploy";
             this.btnDep.UseVisualStyleBackColor = true;
@@ -271,9 +280,10 @@
             // 
             // btnUnDep
             // 
-            this.btnUnDep.Location = new System.Drawing.Point(731, 26);
+            this.btnUnDep.Location = new System.Drawing.Point(975, 32);
+            this.btnUnDep.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUnDep.Name = "btnUnDep";
-            this.btnUnDep.Size = new System.Drawing.Size(75, 23);
+            this.btnUnDep.Size = new System.Drawing.Size(100, 28);
             this.btnUnDep.TabIndex = 24;
             this.btnUnDep.Text = "Undeploy";
             this.btnUnDep.UseVisualStyleBackColor = true;
@@ -281,51 +291,56 @@
             // 
             // txtUser
             // 
-            this.txtUser.Location = new System.Drawing.Point(518, 26);
+            this.txtUser.Location = new System.Drawing.Point(691, 32);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(100, 20);
+            this.txtUser.Size = new System.Drawing.Size(132, 22);
             this.txtUser.TabIndex = 25;
             // 
             // lblUser
             // 
             this.lblUser.AutoSize = true;
-            this.lblUser.Location = new System.Drawing.Point(540, 9);
+            this.lblUser.Location = new System.Drawing.Point(720, 11);
+            this.lblUser.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(29, 13);
+            this.lblUser.Size = new System.Drawing.Size(38, 17);
             this.lblUser.TabIndex = 13;
             this.lblUser.Text = "User";
             // 
             // brnCreateObjOrInst
             // 
-            this.brnCreateObjOrInst.Location = new System.Drawing.Point(905, 221);
+            this.brnCreateObjOrInst.Location = new System.Drawing.Point(1064, 224);
+            this.brnCreateObjOrInst.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.brnCreateObjOrInst.Name = "brnCreateObjOrInst";
-            this.brnCreateObjOrInst.Size = new System.Drawing.Size(75, 23);
+            this.brnCreateObjOrInst.Size = new System.Drawing.Size(100, 28);
             this.brnCreateObjOrInst.TabIndex = 26;
             this.brnCreateObjOrInst.Text = "Create";
             this.brnCreateObjOrInst.UseVisualStyleBackColor = true;
             this.brnCreateObjOrInst.Click += new System.EventHandler(this.brnCreateObjOrInst_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(0, 0);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 27;
-            // 
             // txtCreateFrom
             // 
-            this.txtCreateFrom.Location = new System.Drawing.Point(781, 156);
+            this.txtCreateFrom.Location = new System.Drawing.Point(1041, 192);
+            this.txtCreateFrom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCreateFrom.Name = "txtCreateFrom";
-            this.txtCreateFrom.Size = new System.Drawing.Size(100, 20);
+            this.txtCreateFrom.Size = new System.Drawing.Size(132, 22);
             this.txtCreateFrom.TabIndex = 28;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(1050, 165);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(114, 17);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Унаследовно от";
             // 
             // WindowsMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(994, 699);
+            this.ClientSize = new System.Drawing.Size(1325, 860);
             this.Controls.Add(this.txtCreateFrom);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.brnCreateObjOrInst);
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.btnUnDep);
@@ -343,6 +358,7 @@
             this.Controls.Add(this.lstFounded);
             this.Controls.Add(this.btnFind);
             this.Controls.Add(this.txtNameE);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblNameE);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.btnConnect);
@@ -353,7 +369,7 @@
             this.Controls.Add(this.btnGetExistGalaxys);
             this.Controls.Add(this.list_galaxys);
             this.HelpButton = true;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "WindowsMain";
             this.Text = "GRAccess";
             this.Load += new System.EventHandler(this.WindowsMain_Load);
@@ -390,8 +406,8 @@
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.Button brnCreateObjOrInst;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox txtCreateFrom;
+        private System.Windows.Forms.Label label2;
     }
 }
 
