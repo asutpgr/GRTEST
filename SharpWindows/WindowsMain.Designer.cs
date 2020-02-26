@@ -53,6 +53,7 @@
             this.btnUnDep = new System.Windows.Forms.Button();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.lblUser = new System.Windows.Forms.Label();
+            this.brnCreateObjOrInst = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // list_galaxys
@@ -137,7 +138,7 @@
             // lblNameE
             // 
             this.lblNameE.AutoSize = true;
-            this.lblNameE.Location = new System.Drawing.Point(883, 323);
+            this.lblNameE.Location = new System.Drawing.Point(902, 134);
             this.lblNameE.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNameE.Name = "lblNameE";
             this.lblNameE.Size = new System.Drawing.Size(81, 13);
@@ -146,7 +147,7 @@
             // 
             // txtNameE
             // 
-            this.txtNameE.Location = new System.Drawing.Point(886, 345);
+            this.txtNameE.Location = new System.Drawing.Point(905, 156);
             this.txtNameE.Margin = new System.Windows.Forms.Padding(2);
             this.txtNameE.Name = "txtNameE";
             this.txtNameE.Size = new System.Drawing.Size(76, 20);
@@ -154,7 +155,7 @@
             // 
             // btnFind
             // 
-            this.btnFind.Location = new System.Drawing.Point(886, 371);
+            this.btnFind.Location = new System.Drawing.Point(905, 182);
             this.btnFind.Margin = new System.Windows.Forms.Padding(2);
             this.btnFind.Name = "btnFind";
             this.btnFind.Size = new System.Drawing.Size(75, 19);
@@ -170,15 +171,15 @@
             "             ALL FOUNDED IN GALAXIES"});
             this.lstFounded.Location = new System.Drawing.Point(12, 123);
             this.lstFounded.Name = "lstFounded";
-            this.lstFounded.Size = new System.Drawing.Size(784, 563);
+            this.lstFounded.Size = new System.Drawing.Size(271, 563);
             this.lstFounded.TabIndex = 11;
             this.lstFounded.SelectedIndexChanged += new System.EventHandler(this.lstFounded_SelectedIndexChanged);
             // 
             // btnGetTemplate
             // 
-            this.btnGetTemplate.Location = new System.Drawing.Point(872, 167);
+            this.btnGetTemplate.Location = new System.Drawing.Point(289, 123);
             this.btnGetTemplate.Name = "btnGetTemplate";
-            this.btnGetTemplate.Size = new System.Drawing.Size(75, 87);
+            this.btnGetTemplate.Size = new System.Drawing.Size(75, 24);
             this.btnGetTemplate.TabIndex = 12;
             this.btnGetTemplate.Text = "Get";
             this.btnGetTemplate.UseVisualStyleBackColor = true;
@@ -292,11 +293,22 @@
             this.lblUser.TabIndex = 13;
             this.lblUser.Text = "User";
             // 
+            // brnCreateObjOrInst
+            // 
+            this.brnCreateObjOrInst.Location = new System.Drawing.Point(905, 221);
+            this.brnCreateObjOrInst.Name = "brnCreateObjOrInst";
+            this.brnCreateObjOrInst.Size = new System.Drawing.Size(75, 23);
+            this.brnCreateObjOrInst.TabIndex = 26;
+            this.brnCreateObjOrInst.Text = "Create";
+            this.brnCreateObjOrInst.UseVisualStyleBackColor = true;
+            this.brnCreateObjOrInst.Click += new System.EventHandler(this.brnCreateObjOrInst_Click);
+            // 
             // WindowsMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(994, 699);
+            this.Controls.Add(this.brnCreateObjOrInst);
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.btnUnDep);
             this.Controls.Add(this.btnDep);
@@ -359,6 +371,7 @@
         private System.Windows.Forms.Button btnUnDep;
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.Label lblUser;
+        private System.Windows.Forms.Button brnCreateObjOrInst;
     }
 }
 

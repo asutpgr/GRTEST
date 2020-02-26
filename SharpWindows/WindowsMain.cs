@@ -26,6 +26,7 @@ namespace SharpWindows
 
         IgObjects IgObjs;
         IgObject IgObj;
+        ITemplate Template;
         bool loggedIN = false; 
 
 
@@ -223,5 +224,18 @@ namespace SharpWindows
             txtStatusResQ.Text = "ID:" + IgObjs.CommandResults.Item[SelectedItemIdnex].ID.ToString() + " " + IgObjs.CommandResults.Item[SelectedItemIdnex].CustomMessage.ToString();
             
         }
-            }
+
+        private void brnCreateObjOrInst_Click(object sender, EventArgs e)
+        {
+            // Создание объекта (UserDefined)
+            
+
+        }
+
+        public ITemplate CreateTemplate(string tagname,string parent)
+        {
+            return 
+
+        }
+    }
 }
